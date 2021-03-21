@@ -1,9 +1,9 @@
 <template>
   <v-app dark>
     <v-main>
-      <v-container-fluid>
+      <v-container fluid>
         <nuxt />
-      </v-container-fluid>
+      </v-container>
     </v-main>
     <v-footer
       :absolute="!fixed"
