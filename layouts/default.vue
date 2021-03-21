@@ -1,7 +1,10 @@
 <template>
   <v-app>
     <v-main>
-      <v-container fluid>
+      <v-container
+        fluid
+        class="px-12"
+      >
         <nuxt />
       </v-container>
     </v-main>
@@ -10,7 +13,9 @@
       app
     >
       <v-row align="center" justify="center">
-        <span>Created with 💗 using NuxJS and ExpressJs with Flickr API</span>
+        <span>
+          Made with 💗 using <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">NuxJS</a> and <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">ExpressJS</a> with Flickr API
+        </span>
       </v-row>
     </v-footer>
   </v-app>
@@ -27,6 +32,7 @@ export default {
 </script>
 
 <style scoped>
+
   .v-footer {
     padding: 1em;
   }
