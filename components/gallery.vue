@@ -1,14 +1,14 @@
 <template>
   <v-row>
     <v-col
-      v-for="n in 9"
-      :key="n"
+      v-for="image in images"
+      :key="image.link"
       class="d-flex child-flex"
       cols="4"
     >
       <v-img
-        :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-        :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+        :src="image.media.m"
+        :lazy-src="image.media.m"
         aspect-ratio="1"
         class="grey lighten-2"
       >
@@ -28,7 +28,11 @@
     </v-col>
   </v-row>
 </template>
-
+<script>
+export default {
+  props: ['images']
+}
+</script>
 <style lang="less" scoped>
 .v-image {
   border-radius: .5em;
