@@ -1,6 +1,7 @@
-# flickr-fetcher
+# flickr-fetcher-fe
+A simple example for fetching flicker API and render it using NuxtJS.
 
-## Build Setup
+## Getting Started
 
 ```bash
 # install dependencies
@@ -15,6 +16,8 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+# App URL:
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Open `localhost:3000` to see the app after running it
